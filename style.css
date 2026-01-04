@@ -809,3 +809,54 @@ body { font-family: 'Inter', sans-serif; background: #fdfaff; color: var(--text)
         font-size: 1rem !important;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* 1. Category Grid Fix */
+    .category-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; /* Mobile par 2 boxes ek line mein */
+        gap: 12px !important;
+    }
+
+    .cat-card {
+        padding: 20px 15px !important;
+        text-align: center;
+    }
+
+    /* 2. Hooks Main Card Fix */
+    .hooks-main-card {
+        padding: 30px 15px !important;
+        border-radius: 25px !important;
+    }
+
+    /* 3. Hooks Inner Grid (Sabse Important) */
+    .hooks-inner-grid {
+        display: flex !important;
+        flex-direction: column !important; /* Hooks ek ke niche ek aayenge */
+        gap: 10px !important;
+        text-align: left !important;
+    }
+
+    .hook-item {
+        width: 100% !important;
+        margin-bottom: 5px !important;
+        font-size: 0.9rem !important;
+        padding: 18px !important; /* Mobile par click/read karne mein easy */
+    }
+
+    .hooks-title {
+        font-size: 1.5rem !important;
+        line-height: 1.3;
+    }
+}
