@@ -901,19 +901,42 @@ p {
 
 
 
-
-h4 {
-    margin-bottom: 15px; /* Heading aur List ke beech gap */
-    color: var(--text);
-    font-size: 1.1rem;
+/* 1. Icon ke niche space */
+.c-icon-bg {
+    margin-bottom: 25px !important; 
 }
 
-.p-list {
-    margin-top: 5px;   /* Extra safety ke liye */
-    padding-left: 0;   /* Agar bullets gayab karne hain toh */
+/* 2. Heading ke niche space */
+.c-card h4 {
+    margin-bottom: 15px !important;
+    display: block;
 }
 
-.p-list li {
-    margin-bottom: 8px; /* Har ek point ke beech ka gap */
+/* 3. Description (p tag) ke niche space taaki list se na chipke */
+.c-sub {
+    margin-bottom: 20px !important;
+    display: block;
+}
+
+
+
+
+
+/* Heading ke niche gap */
+.c-card h4 {
+    margin-bottom: 18px !important;
+    display: block;
+}
+
+/* Sub-description (p tag) ke niche gap taaki list chipke na */
+.c-sub {
+    margin-bottom: 22px !important;
+    display: block;
     line-height: 1.5;
+    color: var(--gray);
+}
+
+/* List items ke beech ka gap */
+.c-list li {
+    margin-bottom: 12px !important; /* Har point ke beech space */
 }
