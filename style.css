@@ -895,3 +895,25 @@ h3 {
 p {
     line-height: 1.6;    /* Paragraph ki lines ke beech space */
 }
+
+
+
+
+
+
+
+h4 {
+    margin-bottom: 15px; /* Heading aur List ke beech gap */
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.p-list {
+    margin-top: 5px;   /* Extra safety ke liye */
+    padding-left: 0;   /* Agar bullets gayab karne hain toh */
+}
+
+.p-list li {
+    margin-bottom: 8px; /* Har ek point ke beech ka gap */
+    line-height: 1.5;
+}
