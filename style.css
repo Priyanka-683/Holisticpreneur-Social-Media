@@ -682,3 +682,61 @@ body { font-family: 'Inter', sans-serif; background: #fdfaff; color: var(--text)
         font-size: 14px !important; /* Input text mobile par sahi dikhe */
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* --- SECTION 3 & 7 RESPONSIVE FIX --- */
+
+@media (max-width: 991px) {
+    /* Section 3: Services Grid Fix */
+    #servicesGrid {
+        grid-template-columns: repeat(2, 1fr) !important; /* Tablet par 2 columns */
+        gap: 15px !important;
+    }
+
+    /* Section 7: Pricing Grid Fix */
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr) !important; /* Tablet par 2 columns */
+        gap: 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Section 3: Services Grid - Mobile (Single Column) */
+    #servicesGrid {
+        grid-template-columns: 1fr !important; /* Mobile par ek ke niche ek */
+        width: 100% !important;
+    }
+
+    /* Section 7: Pricing Grid - Mobile (Single Column) */
+    .pricing-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    /* Cards ki width adjust karna taaki screen se bahar na jaye */
+    .service-card, .price-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Titles and Padding Fix */
+    section {
+        padding: 50px 15px !important; /* Mobile par sides mein space */
+    }
+
+    h2, .section-title {
+        font-size: 28px !important; /* Mobile headings adjust */
+        text-align: center !important;
+    }
+}
