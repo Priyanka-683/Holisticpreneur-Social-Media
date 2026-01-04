@@ -715,28 +715,45 @@ body { font-family: 'Inter', sans-serif; background: #fdfaff; color: var(--text)
         width: 100% !important;
     }
 
-    /* Section 7: Pricing Grid - Mobile (Single Column) */
+    /* --- DESKTOP VIEW (By Default) --- */
+/* Ye code desktop par 3 columns rakhega */
+#servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Desktop par 3 columns */
+    gap: 30px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Desktop par 3 columns */
+    gap: 30px;
+}
+
+
+
+
+/* --- MOBILE & TABLET ONLY VIEW --- */
+/* Ye code sirf 1024px se choti screen par kaam karega */
+@media screen and (max-width: 1024px) {
+    #servicesGrid {
+        grid-template-columns: repeat(2, 1fr); /* Tablet par 2 columns */
+    }
     .pricing-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
+        grid-template-columns: repeat(2, 1fr); /* Tablet par 2 columns */
+    }
+}
+
+/* Ye code sirf 768px (Phone) se choti screen par kaam karega */
+@media screen and (max-width: 768px) {
+    #servicesGrid {
+        grid-template-columns: 1fr !important; /* Phone par 1 column */
+    }
+    .pricing-grid {
+        grid-template-columns: 1fr !important; /* Phone par 1 column */
+    }
+    
+    .price-card, .service-card {
         width: 100% !important;
-    }
-
-    /* Cards ki width adjust karna taaki screen se bahar na jaye */
-    .service-card, .price-card {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin-bottom: 15px !important;
-    }
-
-    /* Titles and Padding Fix */
-    section {
-        padding: 50px 15px !important; /* Mobile par sides mein space */
-    }
-
-    h2, .section-title {
-        font-size: 28px !important; /* Mobile headings adjust */
-        text-align: center !important;
+        max-width: 100%;
     }
 }
