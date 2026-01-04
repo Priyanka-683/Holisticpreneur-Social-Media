@@ -881,3 +881,17 @@ h4 {
 .space-y {
     margin-bottom: 20px;
 }
+
+
+
+
+
+h3 {
+    margin-bottom: 15px; /* Heading ke niche space */
+    font-weight: 700;    /* Text ko thoda bold aur clean dikhane ke liye */
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;    /* Paragraph ki lines ke beech space */
+}
