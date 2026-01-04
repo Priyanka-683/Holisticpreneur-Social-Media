@@ -1,0 +1,88 @@
+/* --- EXISTING DESIGN PRESERVED --- */
+.premium-field-group { position: relative; width: 100%; }
+.premium-input {
+    width: 100%; padding: 14px 4px; font-size: 16px; font-weight: 600;
+    color: #1e293b; background: transparent; border: none;
+    border-bottom: 2px solid #f1f5f9; outline: none; transition: all 0.4s ease;
+}
+.premium-label {
+    position: absolute; top: 14px; left: 4px; font-size: 13px; font-weight: 700;
+    color: #94a3b8; pointer-events: none; transition: all 0.3s ease;
+    text-transform: uppercase; letter-spacing: 0.1em;
+}
+.premium-input:focus ~ .premium-label,
+.premium-input:not(:placeholder-shown) ~ .premium-label {
+    top: -24px; font-size: 10px; color: #8b5cf6;
+}
+.field-border {
+    position: absolute; bottom: 0; left: 0; width: 0; height: 2px;
+    background: linear-gradient(to right, #8b5cf6, #ec4899); transition: width 0.4s ease;
+}
+.premium-input:focus ~ .field-border { width: 100%; }
+
+/* --- SERVICE CARD & CIRCLE LOGIC --- */
+.service-card {
+    @apply h-full p-6 rounded-3xl bg-white border border-slate-100 transition-all duration-500 text-center shadow-sm cursor-pointer relative flex flex-col items-center justify-center;
+}
+
+/* Premium Circle (Radio-style) */
+.check-dot {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]:checked + .service-card {
+    border-color: #8b5cf6 !important;
+    background-color: #fcfaff !important;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.15);
+}
+
+input[type="checkbox"]:checked + .service-card .check-dot {
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
+}
+
+input[type="checkbox"]:checked + .service-card .check-dot::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* --- ULTRA PREMIUM BUTTON --- */
+.premium-submit-btn {
+    width: 100%;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    /* Luxury Indigo-Pink Gradient */
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+    background-size: 200% auto;
+    border-radius: 24px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 20px 40px -15px rgba(139, 92, 246, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+.premium-submit-btn:hover {
+    background-position: right center;
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 25px 50px -12px rgba(139, 92, 246, 0.6);
+}
+
+.premium-submit-btn:active {
+    transform: scale(0.97);
+}

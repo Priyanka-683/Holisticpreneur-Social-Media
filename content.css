@@ -1,0 +1,63 @@
+/* --- CONTAINER SETTINGS --- */
+.field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Label Style */
+.premium-label {
+    font-size: 13px;
+    font-weight: 800;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-left: 5px;
+}
+
+/* THE BOX DESIGN (100% VISIBLE) */
+.visible-input {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    background: #f1f5f9; /* Solid Light Grey */
+    border: 2px solid #cbd5e1; /* Darker Visible Border */
+    border-radius: 18px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Click hone par Purple Border */
+.visible-input:focus {
+    background: #ffffff;
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1);
+}
+
+.visible-input::placeholder {
+    color: #94a3b8;
+}
+
+/* --- THE CTA BUTTON --- */
+.premium-btn {
+    width: 100%;
+    padding: 22px;
+    font-size: 17px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 15px 30px -10px rgba(139, 92, 246, 0.5);
+    transition: all 0.4s ease;
+}
+
+.premium-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
