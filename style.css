@@ -757,3 +757,55 @@ body { font-family: 'Inter', sans-serif; background: #fdfaff; color: var(--text)
         max-width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    /* 1. Engagement Grid ko Stack karna */
+    .engagement-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .eng-card {
+        width: 100% !important;
+        padding: 25px !important;
+    }
+
+    /* 2. Selling Main Card adjustments */
+    .selling-main-card {
+        padding: 30px 20px !important;
+        border-radius: 25px !important;
+    }
+
+    /* 3. Selling Icons (Jo icons line mein the unhe grid banana) */
+    .selling-icons-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; /* Mobile par 2x2 grid */
+        gap: 30px !important;
+    }
+
+    .s-item {
+        margin-bottom: 10px;
+    }
+
+    .s-icon {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 1rem !important;
+    }
+}
