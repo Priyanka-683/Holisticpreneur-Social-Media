@@ -607,3 +607,78 @@ body { font-family: 'Inter', sans-serif; background: #fdfaff; color: var(--text)
     color: #475569; /* Slate grey text */
     font-weight: 500;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- UNIVERSAL RESPONSIVE FIX --- */
+
+@media (max-width: 1024px) {
+    /* 1. Main Container ko squeeze hone se rokna */
+    .container, main, section {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        overflow-x: hidden !important;
+    }
+
+    /* 2. Pricing Grid Fix (Mobile par 1 column) */
+    .pricing-grid {
+        display: flex !important;
+        flex-direction: column !important; /* Cards ek ke niche ek */
+        align-items: center !important;
+        gap: 30px !important;
+    }
+
+    /* 3. Pricing Cards ki width mobile par */
+    .price-card {
+        width: 100% !important;
+        max-width: 400px !important; /* Bahut zyada bada na ho jaye */
+        margin: 0 auto !important;
+    }
+
+    /* 4. Text and Headings */
+    h1 {
+        font-size: 2.5rem !important; /* Heading thodi choti mobile ke liye */
+        text-align: center !important;
+    }
+    
+    p {
+        text-align: center !important;
+    }
+
+    /* 5. Horizontal Scroll khatam karne ke liye */
+    body, html {
+        overflow-x: hidden !important;
+        position: relative;
+    }
+}
+
+/* 6. Form/Library Page Fix */
+@media (max-width: 600px) {
+    .form-container {
+        width: 100% !important;
+        padding: 20px !important;
+        border-radius: 20px !important;
+    }
+    
+    .premium-box {
+        font-size: 14px !important; /* Input text mobile par sahi dikhe */
+    }
+}
