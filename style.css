@@ -928,3 +928,126 @@ p {
 <p class="c-sub" style="margin-bottom: 25px; display: block;">
     Eye-catching visuals that demand attention in busy feeds
 </p>
+
+
+
+
+
+
+
+.footer-trust {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-legal-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-legal-links a {
+    text-decoration: none;
+    color: #888; /* Muted gray */
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.footer-legal-links a:hover {
+    color: #cf37c8; /* Aapka brand purple */
+}
+
+.footer-legal-links .separator {
+    color: #eee;
+    font-weight: 300;
+}
+
+/* Mobile responsive optimization */
+@media (max-width: 600px) {
+    .footer-legal-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-legal-links .separator {
+        display: none; /* Mobile par separator ki zarurat nahi */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Container for bottom text */
+.footer-bottom-text {
+    text-align: center;
+    padding: 60px 0; /* Vertical space for the whole block */
+    background: transparent;
+}
+
+/* 1. Legal Links Row */
+.footer-legal-row {
+    margin-bottom: 40px; /* Neeche wale text se gap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Privacy aur Terms ke beech gap */
+}
+
+.legal-item {
+    text-decoration: none !important;
+    color: #888 !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    
+    /* Removing ALL highlights */
+    background: transparent !important;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent; 
+    
+    transition: color 0.3s ease;
+}
+
+.legal-item:hover {
+    color: #cf37c8 !important;
+}
+
+.legal-dot {
+    color: #eee;
+    font-size: 1.2rem;
+}
+
+/* 2. Copyright Info Spacing */
+.footer-copyright-info p {
+    margin: 15px 0 !important; /* Har line ke beech proper gap */
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.8 !important; /* Line spacing fixed here */
+}
+
+.tagline {
+    color: #999 !important;
+    font-weight: 300;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .footer-legal-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .legal-dot {
+        display: none;
+    }
+}
