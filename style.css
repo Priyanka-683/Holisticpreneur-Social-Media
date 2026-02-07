@@ -922,21 +922,9 @@ p {
 
 
 
-/* Heading ke niche gap */
-.c-card h4 {
-    margin-bottom: 18px !important;
-    display: block;
-}
 
-/* Sub-description (p tag) ke niche gap taaki list chipke na */
-.c-sub {
-    margin-bottom: 22px !important;
-    display: block;
-    line-height: 1.5;
-    color: var(--gray);
-}
+<h4 style="margin-bottom: 22px; display: block;">Scroll-Stopping Graphics</h4>
 
-/* List items ke beech ka gap */
-.c-list li {
-    margin-bottom: 12px !important; /* Har point ke beech space */
-}
+<p class="c-sub" style="margin-bottom: 25px; display: block;">
+    Eye-catching visuals that demand attention in busy feeds
+</p>
