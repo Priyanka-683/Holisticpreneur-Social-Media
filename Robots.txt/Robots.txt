@@ -1,0 +1,21 @@
+# Holisticpreneur Social Robots.txt
+# Targeted for Search Engines to protect user privacy
+
+User-agent: *
+
+# Allow search engines to see your landing pages and public blogs
+Allow: /
+Allow: /about
+Allow: /courses
+
+# DISALLOW: Do NOT index private user areas
+Disallow: /admin/
+Disallow: /settings/
+Disallow: /messages/
+Disallow: /profile/edit/
+Disallow: /api/
+Disallow: /login
+Disallow: /signup
+
+# Sitemaps help Google find your public content faster
+Sitemap: https://holisticpreneur-social-media.vercel.app//sitemap.xml
